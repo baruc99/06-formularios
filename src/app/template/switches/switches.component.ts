@@ -1,5 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-switches',
@@ -9,23 +8,13 @@ import { NgForm } from '@angular/forms';
 })
 export class SwitchesComponent  {
 
-  @ViewChild('miFormulario') miFormulario!:NgForm;
-
   persona = {
-    genero: '',
-    notificaciones: false,
+    genero: 'F',
+    notificaciones: true,
   }
 
-  terminosycondiciones: boolean = false;
+  terminosYCondiciones: boolean = false;
 
 
-
-  guardar(){
-
-    console.log( this.miFormulario );
-    
-  }
-
-  
 
 }
